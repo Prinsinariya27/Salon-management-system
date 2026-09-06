@@ -1,0 +1,41 @@
+========================================
+ HOW TO ADD YOUR GPay QR CODE
+========================================
+
+Step 1: Get Your QR Code
+-------------------------
+1. Open your Google Pay (GPay) app
+2. Go to your profile/business account
+3. Click on "QR Code" or "Your QR Code"
+4. Download or take a screenshot of your QR code
+5. Save it as an image file (PNG or JPG)
+
+Step 2: Add QR Code to Website
+-------------------------------
+1. Rename your QR code image to: gpay-qr-code.png
+2. Copy the image to this folder:
+   Men-Salon-Management-System-Project-PHP\msms\images\
+
+Step 3: Test It
+---------------
+1. Go to: http://localhost/Men-Salon-Management-System-Project-PHP/msms/checkout.php
+2. Add products to cart
+3. Select "GPay / UPI Payment"
+4. Click "Place Order"
+5. You will see your QR code in the popup!
+
+Alternative Options:
+--------------------
+- You can use PhonePe, Paytm, or any UPI QR code
+- Just save it as gpay-qr-code.png and add to images folder
+- Make sure the image is clear and scannable
+- Recommended size: 500x500 pixels or larger
+
+Important Notes:
+----------------
+- Keep your QR code image secure
+- Only share it on your official website
+- Regularly verify that the QR code is working
+- Test with a small amount first
+
+========================================
