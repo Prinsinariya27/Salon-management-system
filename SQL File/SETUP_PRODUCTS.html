@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Add Products - Instructions</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 900px;
+            margin: 50px auto;
+            padding: 20px;
+            background: #f5f5f5;
+        }
+        .container {
+            background: white;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #aa9144;
+            border-bottom: 3px solid #aa9144;
+            padding-bottom: 10px;
+        }
+        .step {
+            background: #f9f9f9;
+            padding: 20px;
+            margin: 20px 0;
+            border-left: 5px solid #aa9144;
+            border-radius: 5px;
+        }
+        .step h3 {
+            margin-top: 0;
+            color: #333;
+        }
+        .btn {
+            display: inline-block;
+            padding: 15px 30px;
+            background: #aa9144;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 16px;
+            font-weight: bold;
+            margin: 10px 5px;
+        }
+        .btn:hover {
+            background: #8e7424;
+        }
+        .btn-success {
+            background: #28a745;
+        }
+        .btn-success:hover {
+            background: #218838;
+        }
+        .code {
+            background: #333;
+            color: #0f0;
+            padding: 15px;
+            border-radius: 5px;
+            font-family: 'Courier New', monospace;
+            overflow-x: auto;
+            margin: 10px 0;
+        }
+        .alert {
+            padding: 15px;
+            border-radius: 5px;
+            margin: 15px 0;
+        }
+        .alert-info {
+            background: #d1ecf1;
+            border: 1px solid #bee5eb;
+            color: #0c5460;
+        }
+        .alert-success {
+            background: #d4edda;
+            border: 1px solid #c3e6cb;
+            color: #155724;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🛍️ Add Products to Your Website</h1>
+        
+        <div class="alert alert-info">
+            <strong>📋 Instructions:</strong> Follow these 2 simple steps to add products to your website's product page.
+        </div>
+        
+        <div class="step">
+            <h3>Step 1: Add Products to Database</h3>
+            <p>Click the button below to automatically add 20 sample products to your database:</p>
+            <a href="add_sample_products.php" class="btn btn-success">
+                ➕ Add 20 Sample Products Now
+            </a>
+            <p><small>This will create the products table and add sample products automatically.</small></p>
+        </div>
+        
+        <div class="step">
+            <h3>Step 2: View Products on Website</h3>
+            <p>After adding products, visit your website's products page:</p>
+            <a href="Men-Salon-Management-System-Project-PHP/msms/products.php" class="btn">
+                🛒 View Products Page
+            </a>
+        </div>
+        
+        <div class="step">
+            <h3>Alternative: Manual Method via phpMyAdmin</h3>
+            <p>If you prefer to add products manually:</p>
+            <ol>
+                <li>Open <a href="http://localhost/phpmyadmin" target="_blank">phpMyAdmin</a></li>
+                <li>Select database: <strong>msmsdb</strong></li>
+                <li>Click on <strong>SQL</strong> tab</li>
+                <li>Copy and paste this SQL:</li>
+            </ol>
+            <div class="code">
+USE msmsdb;<br><br>
+INSERT INTO `tblproducts` (`ProductName`, `ProductDescription`, `ProductPrice`, `ProductImage`, `Category`, `Stock`, `Status`) VALUES<br>
+('Premium Hair Wax', 'Strong hold hair wax for perfect styling.', 450.00, 'Hair Wax.jpg', 'Hair Care', 50, 1),<br>
+('Beard Oil', 'Nourishing beard oil with essential oils.', 550.00, 'Beard Oil.jpg', 'Beard Care', 45, 1),<br>
+('Hair Styling Gel', 'Professional strength gel for all-day hold.', 380.00, 'Hair Styling Gel.jpg', 'Hair Care', 60, 1),<br>
+('Shaving Cream', 'Rich lathering shaving cream for smooth shave.', 320.00, 'Shaving Cream.jpg', 'Shaving', 70, 1),<br>
+('Hair Spray', 'Flexible hold hairspray.', 420.00, 'Hair Spray.jpg', 'Hair Care', 55, 1);
+            </div>
+            <p>Click <strong>Go</strong> to execute.</p>
+        </div>
+        
+        <div class="step">
+            <h3>Admin Panel</h3>
+            <p>You can also manage products from admin panel:</p>
+            <a href="Men-Salon-Management-System-Project-PHP/msms/admin/manage-products.php" class="btn">
+                ⚙️ Admin - Manage Products
+            </a>
+        </div>
+        
+        <div class="alert alert-success">
+            <strong>✅ Tip:</strong> After adding products, they will automatically appear on your website's products page!
+        </div>
+    </div>
+</body>
+</html>
